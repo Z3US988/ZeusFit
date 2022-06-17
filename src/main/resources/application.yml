@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: ${Url-Database}:3306/${DB-Name}?useSSL=true
+    username: ${DB-username}
+    password: ${DB-password}
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+      dialect : org.hibernate.dialect.MySQLInnoDBDialect
+
+server:
+  port: 8080
+
+azure:
+  keyvault:
+    enabled: true
+    uri: https://zeusfitkeyvault.vault.azure.net/
+    client-id: 61c44725-383c-43a3-93c9-30e94374ec15
+    client-key: V.q~NOT7o.KH5A4n2G9fbO3Rl4K~yYvx-z
+    tenant-id: 2fcfe26a-bb62-46b0-b1e3-28f9da0c45fd
+
